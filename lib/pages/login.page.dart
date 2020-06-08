@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:spotify_clone/pages/principal.page.dart';
 
 class Login extends StatefulWidget {
   @override
@@ -36,7 +37,7 @@ class _LoginState extends State<Login> {
           
         ),
 
-            child: Column(
+            child: ListView(
 
     
 
@@ -160,7 +161,21 @@ class _LoginState extends State<Login> {
                         fontSize: 18,
                       ),
                       ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+
+                          context, 
+
+                          MaterialPageRoute(
+
+                              builder: (context) => PrincipalPage(),
+
+                          ),
+
+
+                          );
+
+                    },
                   ),
               ),
 
